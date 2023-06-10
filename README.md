@@ -1,8 +1,23 @@
+## Introduction
+
+This is just a basic To-Do-App with Next.js 13.4, Tanstack Query v4 and MUI.
+This is just for exercise purposes.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Prerequesites
+
+Node.js and npm are required.
 
 ## Getting Started
 
-First, run the development server:
+Install the packages with 
+npm install
+
+Run the json-server with:
+json-server --watch db.json --port 3001
+
+run the development server:
 
 ```bash
 npm run dev

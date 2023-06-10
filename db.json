@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "title": "Go shopping",
+      "done": false
+    },
+    {
+      "id": "2",
+      "title": "Walk the dog",
+      "done": false
+    },
+    {
+      "id": "f1a82176-9197-4c61-b9bd-201478facbaf",
+      "title": "Exercise",
+      "done": false
+    }
+  ]
+}

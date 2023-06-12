@@ -1,4 +1,4 @@
-import { Todo } from "@/components/todos";
+import { Todo } from "@/src/components/todos";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import axios from 'axios';
 

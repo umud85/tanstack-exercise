@@ -1,4 +1,4 @@
-import getTodos from '@/services/getTodos';
+import getTodos from '@/src/services/getTodos';
 import { useQuery } from '@tanstack/react-query';
 
 export default function useFetchTodos(props) {

@@ -61,7 +61,7 @@ export default function Todos(props) {
     updateTodoMutation.mutate(updatedTodo);
   };
 
-  function handleDeleteClick(id: string) {
+  function handleDeleteClick(id: number) {
     deleteTodoMutation.mutate(id);
   } 
 

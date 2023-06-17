@@ -27,6 +27,6 @@ test("my first test", async () => {
   const { result } = renderHook(() => useFetchTodos(todos), {
     wrapper: createWrapper()
   });
-  await waitFor(() => result.current.isSuccess);
+  await waitFor(() => result.current);
   expect(result.current).toEqual(todos);
 });

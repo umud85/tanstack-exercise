@@ -21,16 +21,16 @@ import useUpdateTodo from '@/src/hooks/useUpdateTodo';
 import useDeleteTodo from '@/src/hooks/useDeleteTodo';
 
 export interface Todo {
-  id: number;
+  id: string;
   title: string;
   done: boolean;
 }
 
-export default function Todos(props) {
+export default function Todos() {
   const [inputValue, setInputValue] = useState<string>('')
   const queryClient = useQueryClient();
 
-  const { todos } = useFetchTodos(props);
+  const { todos } = useFetchTodos();
   const createTodoMutation = useCreateTodo();
   const updateTodoMutation = useUpdateTodo();
   const deleteTodoMutation = useDeleteTodo();

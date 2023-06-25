@@ -1,7 +1,7 @@
 import { dehydrate, Hydrate } from '@tanstack/react-query';
-import getQueryClient from '@/app/getQueryClient';
-import { getTodos } from '@/app/page';
-import Todos from '@/components/todos';
+import getQueryClient from '@/src/app/getQueryClient';
+import getTodos from '@/src/app/page';
+import Todos from '@/src/components/todos';
 
 export default async function HydratedTodos() {
   const queryClient = getQueryClient();

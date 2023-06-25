@@ -30,10 +30,18 @@ export default function Todos() {
   const [inputValue, setInputValue] = useState<string>('')
   const queryClient = useQueryClient();
 
-  const { todos } = useFetchTodos();
+  const { data: todos, isLoading, isError, error } = useFetchTodos();
   const createTodoMutation = useCreateTodo();
   const updateTodoMutation = useUpdateTodo();
   const deleteTodoMutation = useDeleteTodo();
+
+  if (isLoading) {
+    return <h2>Loading...</h2>
+  }
+
+  if (isError && error instanceof Error) {
+    return <h2>Error: {error.message}</h2>
+  }
 
   const todoList = todos?.map((todo: Todo) => (
     <li key={todo.id}>{todo.title}</li>
@@ -61,7 +69,7 @@ export default function Todos() {
     updateTodoMutation.mutate(updatedTodo);
   };
 
-  function handleDeleteClick(id: number) {
+  function handleDeleteClick(id: string) {
     deleteTodoMutation.mutate(id);
   } 
 

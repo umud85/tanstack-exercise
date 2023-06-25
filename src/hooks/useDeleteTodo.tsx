@@ -4,7 +4,7 @@ import { useMutation, useQueryClient } from '@tanstack/react-query';
 export default function useDeleteTodo() {
   const queryClient = useQueryClient();
   const mutation = useMutation({
-    mutationFn: (id: number) => {
+    mutationFn: (id: string) => {
       return axios.delete(`http://localhost:3001/todos/${id}`)
     },
     onSuccess: async () => {

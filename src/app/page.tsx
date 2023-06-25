@@ -1,11 +1,11 @@
 import React from "react";
-import HydratedTodos from '@/src/app/hydratedTodos';
+import Todos from "@/src/components/todos"
 
-export default async function Home() {
+export default function Home() {
   return (
     <>
       <h1>Todo-List-App</h1>
-      <HydratedTodos />
+      <Todos />
     </>
   );
 }

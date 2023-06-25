@@ -15,7 +15,7 @@ Install the packages with
 npm install
 
 Run the json-server with:
-json-server --watch db.json --port 3001
+npm run json-servernp
 
 run the development server:
 
